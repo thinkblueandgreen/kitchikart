@@ -1,0 +1,85 @@
+<!-- navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" style="font-size: 25px; font-family: cursive">KitchiKart</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"
+                    style="color: #119b8f; margin: 10px 30px; font-size: 25px;">
+                    Kitchen Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item category" href="#" value="smallappliances">Small appliances</a>
+                    <a class="dropdown-item category" href="#" value="tabelware">Tableware</a>
+                    <a class="dropdown-item category" href="#" value="cookware">Cookware</a>
+                    <a class="dropdown-item category" href="#" value="tableutensile">Table utensile</a>
+                    <a class="dropdown-item category" href="#" value="misc">Misc</a>
+                </div>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" style="color: #119b8f; margin: 10px 30px; font-size: 25px;" href="#">Sale</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: #119b8f; margin: 10px 30px; font-size: 25px;" href="#">Design
+                    Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: #119b8f; margin: 10px 30px; font-size: 25px;" href="#">Gift
+                    Registry</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- landing panel -->
+
+<div class="bg"
+    style="background-image: url(whiteKichen.jpg); height: 50%; background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <div class="row h-50 w-25" style="float: auto; margin: 40px">
+        <button class="my-auto shopAll "
+            style="width: 100px;  background: rgb(235, 25, 25); margin: 20px; color: #FFFFFF; font-family:'Lato', sans-serif; line-height: 30px;">
+            SHOP ALL
+        </button>
+    </div>
+</div>
+<br>
+
+<!-- products display -->
+
+<div class="displayContainer">
+<ul>
+  {{#each kitchenitems}}
+  
+  	<li>
+  	    <p><span>Name:</span> {{this.productName}}</p>
+      <p><span>Category:</span> {{this.category}}</p>
+      <p><span>Description:</span> {{this.productDescription}}</p>
+  	</li>
+  {{/each}}
+</ul>
+</div>
+
+<!-- footer -->
+<footer class="footer mt-auto py-3 px-3" style="background: black; color: white">
+    <div style="text-align: center;">
+        <span class="text-muted">©&nbsp;KichiKart 2020. </span>
+    </div>
+</footer>
+
+<style>
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+    }
+</style>
+
+
+
