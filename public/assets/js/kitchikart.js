@@ -1,4 +1,4 @@
-$(function () {
+/*$(function () {
 
   console.log("kitchikar.js file loaded.. ");
 
@@ -12,24 +12,24 @@ $(function () {
     // Send the GET request.
     $.ajax(queryURL, {
       type: "GET",
-      data: "kitchenitems"
+      // data: "kitchenitems"
     }).then(
       function (data) {
-        console.log("from ajax call:" + data);
+        console.log("from ajax call:" + JSON.stringify(data));
       });
 
-    $(".shopAll").on("click", function (event) {
-      event.preventDefault();
-      // Send the PUT request.
-      $.ajax("/all", {
-        type: "PUT",
-        data: "kitchenitems"
-      }).then(
-        function (data) {
+    // $(".shopAll").on("click", function (event) {
+    //   event.preventDefault();
+    //   // Send the PUT request.
+    //   $.ajax("/all", {
+    //     type: "PUT",
+    //     data: "kitchenitems"
+    //   }).then(
+    //     function (data) {
 
-          location.reload();
-        });
-    });
+    //       location.reload();
+    //     });
+    // });
 
   })
-})
+})*/

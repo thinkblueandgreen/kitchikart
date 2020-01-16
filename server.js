@@ -9,13 +9,23 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 // Use the express.static middleware to serve static content for the app from the "public" directory in the application directory.
+
+// app. express ...app
+
 app.use(express.static("public"));
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.engine("handlebars", exphbs({
+   defaultLayout: "main" ,
+   helpers: {
+    toJSON : function(object) {
+      return JSON.stringify(object);
+    }
+  }
+  }));
 app.set("view engine", "handlebars");
 
 var connection = mysql.createConnection({
@@ -34,14 +44,16 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
 });
 
+
 // Serve index.handlebars to the root route.
 app.get("/", function(req, res) {
     console.log("/ root loaded");
-    res.render("index");
+    res.render("home");
 });
 
-// Serve index.handlebars to the category click.
-app.get("/category/:catName", function(req, res) {
+// Serve index.handlebars to the root route.
+app.get("/:catName", function(req, res) {
+  console.log("/ root with parameter loaded");
   console.log( "category==>"+req.params.catName);
   connection.query("SELECT * FROM kitchenitems where category = ?", [req.params.catName], function(err, data) {
   //connection.query(query, function(err, data) {
@@ -49,38 +61,16 @@ app.get("/category/:catName", function(req, res) {
       console.log(err.sqlMessage);
       return res.status(500).end();
     }
-    console.log(data);
-    // res.json(data);
-    res.render("items", { kitchenitems: data });
+    console.log("##### data from server: ", data);    
+    res.render("appliancescontent", {kitchenitems: data} );
   });
 });
 
-// Serve index.handlebars to shop all button.
-// app.get("/all", function(req, res) {
-//   //var query = "SELECT * FROM kitchenitems;"
-//   //console.log(query);
-//   connection.query(query, function(err, data) {
-//   //connection.query(query, function(err, data) {
-//     if (err) {
-//       return res.status(500).end();
-//     }
-//     console.log(data);
-//     res.render("index", { kitchenitems: data });
-//   });
-// });
-
-
-// Serve one procuct.
-/*app.get("/:id", function(req, res) {
-  connection.query("SELECT * FROM quotes where id = ?", [req.params.id], function(err, data) {
-    if (err) {
-      return res.status(500).end();
-    }
-
-    console.log(data);
-    res.render("Product", data[0]);
-  });
-});*/
+app.get("/buy/:id", function(req, res) {
+    console.log("buy functionality is been done");
+    // reduce the content and database actions here. ...
+    res.render("home");
+});
 
 app.listen(PORT, function() {
   // Log (server-side) when our server has started

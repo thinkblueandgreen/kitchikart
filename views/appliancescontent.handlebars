@@ -1,0 +1,20 @@
+<div class="displayContainer">
+
+Items are,
+
+<ul>
+  {{#each kitchenitems}}
+    {{!--kitchenitems.id--}}
+    {{!--toJSON kitchenitems--}}
+  
+  	<li>
+  	  <p><span>Name:</span> {{this.id}}</p>
+      <p><span>Category:</span> {{this.category}}</p>
+      <p><span>Description:</span> {{this.productName}}</p>
+      <button> <a href="http://localhost:8080/buy/{{this.id}}">Buy Now</a></button>
+  	</li>
+  {{/each}}
+</ul>
+</div>
+
+
