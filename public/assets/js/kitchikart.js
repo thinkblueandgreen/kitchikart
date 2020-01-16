@@ -1,4 +1,4 @@
-/*$(function () {
+$(function () {
 
   console.log("kitchikar.js file loaded.. ");
 
@@ -15,7 +15,7 @@
       // data: "kitchenitems"
     }).then(
       function (data) {
-        console.log("from ajax call:" + JSON.stringify(data));
+        console.log("from ajax call:" + data);
       });
 
     // $(".shopAll").on("click", function (event) {
@@ -32,4 +32,4 @@
     // });
 
   })
-})*/
+})
