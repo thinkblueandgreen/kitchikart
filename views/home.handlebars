@@ -1,7 +1,32 @@
+<!-- on load modal display -->
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        {{!-- <div class="modal-header">     </div> --}}
+        <div style="align: right;">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>   
+        <div class="modal-body">
+          <h4 class="modal-title" style="color: # f5f5f5;">Hear about the latest and greatest from our family of brands! </h4>
+          <p><stong>Try afterpay! Shop now... enjoy now... pay later... </stong></p>
+          <p>Nothing is more romantic than a home-cooked  and nothing is more adorable than preparing it with heart-shaped kitchen gadgets. KichiKart offers wide variey of kitchen products that help you to make your Valentine's day dinner memorable.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 <br>
 <br>
 <h3 style="text-align: center;"> Welcome to KichiKart. Your one stop to buy all kitchen items </h3>
 <br>
 <br>
 
-{{!-- <a href="/addProduct">Add Product</a> --}}
+ <script>
+    $(window).load(function () {
+      console.log('alert modal');
+      $("#myModal").modal('show');
+    });
+  </script>

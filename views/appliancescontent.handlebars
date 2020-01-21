@@ -1,23 +1,37 @@
-<br><br>
+{{!-- <div class="container col-sm-4 py-5 bg-faded">
+    <div class="card-columns" >
+        {{#each kitchenitems}}
+        <div class="card">
+                <div>  Category: {{this.dataValues.category}}</div >
+                <div>  Item Price: {{this.dataValues.itemPrice}}</div>
+                <div>  Quantity: {{this.dataValues.quantity}}</div> 
+            <p  style="height: 100px;"><span>Description:</span> {{this.dataValues.description}}</p>
+            <img  class="card-img-top img-fluid" src="/assets/pics/{{this.dataValues.picurl}}" alt="Product image" height="200" width="200" >
 
-<div class="displayContainer">
-  {{#each kitchenitems}}
-  {{!--kitchenitems.id--}}
-  {{!--toJSON kitchenitems--}}
-  <div class="card w-75" style="margin-left: 14vw; margin-bottom: 20px">
-    <h5 class="card-header" style="background-color: #808080;">{{this.dataValues.name}}</h5>
-    <div class="card-body">
-      <div class="row">
-      <div class="col-md-4">  Category: {{this.dataValues.category}}</div> 
-      <div class="col-md-4">  Item Price: {{this.dataValues.itemPrice}}</div>
-      <div class="col-md-4">  Quantity: {{this.dataValues.quantity}}</div> 
-      </div>
-      <p><span>Description:</span> {{this.dataValues.description}}</p>
-      <img src="/assets/pics/{{this.dataValues.picurl}}" alt="Product image" height="200" width="200">
-      {{!-- <a class="btn" href="/buy/{{this.dataValues.id}}" style="background-color: rgb(236, 16, 27);">Buy Now</a> --}}
-      <a class="btn" href="/buy/{{this.dataValues.id}}" style="background-color: rgb(236, 16, 27);">Buy Now</a>
+            <a class="btn addToCartAnchor" href="/addToCart/{{this.dataValues.id}}/{{this.dataValues.quantity}}" 
+            style="background-color: rgb(236, 16, 27);" 
+            id="addToCartAnchor" prodName="{{this.dataValues.name}}">Add to cart</a>
+        </div>
+        {{/each}}
     </div>
-  </div>
+</div> --}}
 
+<div class="container py-5 bg-faded">
+    <div class="card-columns" >
+        {{#each kitchenitems}}
+        <div class="card">
+          <h5 >{{this.dataValues.name}}</h5>
+           <img  class="card-img-top img-fluid" src="/assets/pics/{{this.dataValues.picurl}}" alt="Product image" >
+                <div>  Category: {{this.dataValues.category}}</div >
+                <div>  Item Price: {{this.dataValues.itemPrice}}</div>
+                <div>  Quantity: {{this.dataValues.quantity}}</div> 
+            <p  style="height: 100px;"><span>Description:</span> {{this.dataValues.description}}</p>
+           
 
-  {{/each}}</div>
+            <a class="btn addToCartAnchor" href="/addToCart/{{this.dataValues.id}}/{{this.dataValues.quantity}}" 
+            style="background-color: rgb(236, 16, 27);" 
+            id="addToCartAnchor" prodName="{{this.dataValues.name}}">Add to cart</a>
+        </div>
+        {{/each}}
+    </div>
+</div>

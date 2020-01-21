@@ -12,80 +12,25 @@
   <script src="/assets/js/kitchikart.js"></script>
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  {{!-- <style>
-    body,
-    html {
-      height: 100%;
-      margin: 0;
-    }
-
-    .bg {
-      background-image: url("/assets/css/whiteKitchen.jpg");
-      height: 50%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .navbar {
-      background-color:#808080;
-    }
-
-    .navbar-toggler {
-      background-color: blue;
-
-    }
-  </style> --}}
-  <script>
-    $(window).load(function () {
-      $("#myModal").modal('show');
-    });
-  </script>
 </head>
 
 <body>
 
-
-  <!-- on load modal display -->
-  {{!-- <div id="myModal" class="modal fade">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Subscribe our Newsletter</h4>
-        </div>
-        <div class="modal-body">
-          <p>Subscribe to our mailing list to get the latest updates</p>
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Name">
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" placeholder="Email Address">
-            </div>
-            <button type="submit" class="btn btn-primary">Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div> --}}
-
-
   <!-- navigation bar -->
+
 
   <nav class="navbar navbar-expand-lg ">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span><i class="fas fa-bars"></i>
+      <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active" style="margin-left: 100px;">
           <!-- homepage routing  -->
-          <a class="nav-link" href="http://localhost:8080"
-            style="color:black; font-size:20px;">KitchiKart</a>
+          <a class="nav-link" href="http://localhost:8080" style="color:black; font-size:20px;">KitchiKart</a>
         </li>
         <!-- catagory dropdown menu  -->
         <li class="nav-item dropdown" style="margin-left: 100px;">
@@ -113,13 +58,14 @@
       </ul>
 
       <!-- Modal link-->
-      <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter" style="color:black; font-size:20px;">
+      <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter"
+        style="color:black; font-size:20px;">
         Kitchen services
       </button>
-      
+
       <!-- Modal box-->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true">
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -128,24 +74,30 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">Whether you are looking for an expert to help setting up your new kitchen or a new add on,
-              KitchiKart is equipped to handle every major and minor project in your kitchen. After all, the kitchen is the
-              heart of the household. Our dependable and experienced services will get the job done right and on time so that
+            <div class="modal-body">Whether you are looking for an expert to help setting up your new kitchen or a new
+              add on,
+              KitchiKart is equipped to handle every major and minor project in your kitchen. After all, the kitchen is
+              the
+              heart of the household. Our dependable and experienced services will get the job done right and on time so
+              that
               your family can get back to making memories.
             </div>
           </div>
         </div>
       </div>
-      
+
       <!-- cart -->
-      
-        <a class="nav-link" href="/cart" style="color:black; font-size:20px;">Cart</a>
-     
-      
-      </div>
+
+      <a class="nav-link" href="http://localhost:8080/addToCart/59/3" style="color:black; font-size:20px;">Cart</a>
+
+
+    </div>
   </nav>
-<br>
-<br>
+  <div style=" text-align:center; font-style:italic; background: #f0f0f0"><span
+      style="padding: 0 60px; display:inline-block"> so many new arrivas </span><span
+      style="padding: 0 60px; display:inline-block;"> limited time 40% off for Valentine's day </span></div>
+  <br>
+  <br>
   {{!-- decorative image below nav bar --}}
   <div class="bg">
 
@@ -156,26 +108,25 @@
 
   {{{ body }}}
 
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-
-
-  <script src="/assets/js/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
   <script src="/assets/js/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="/assets/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
   <script>"https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.js"</script>
+
+
+  {{!-- 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script> --}}
+
+  {{!-- 
+  <script src="/assets/js/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script> --}}
+  {{!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> --}}
 
 
   <!-- footer -->
