@@ -17,20 +17,23 @@
 </div> --}}
 
 <div class="container py-5 bg-faded">
-    <div class="card-columns" >
+    <div class="card-columns">
         {{#each kitchenitems}}
-        <div class="card">
-          <h5 >{{this.dataValues.name}}</h5>
-           <img  class="card-img-top img-fluid" src="/assets/pics/{{this.dataValues.picurl}}" alt="Product image" >
-                <div>  Category: {{this.dataValues.category}}</div >
-                <div>  Item Price: {{this.dataValues.itemPrice}}</div>
-                <div>  Quantity: {{this.dataValues.quantity}}</div> 
-            <p  style="height: 100px;"><span>Description:</span> {{this.dataValues.description}}</p>
-           
-
-            <a class="btn addToCartAnchor" href="/addToCart/{{this.dataValues.id}}/{{this.dataValues.quantity}}" 
-            style="background-color: rgb(236, 16, 27);" 
-            id="addToCartAnchor" prodName="{{this.dataValues.name}}">Add to cart</a>
+        <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7); padding: 10px;">
+            <h5 style="text-align: center;">{{this.dataValues.name}}</h5>
+            <div> Category: {{this.dataValues.category}}</div>
+            <div> Item Price: {{this.dataValues.itemPrice}}</div>
+            <div> Quantity: {{this.dataValues.quantity}}</div>
+            <p style="height: 100px;"><span>Description:</span> {{this.dataValues.description}}</p>
+            <img class="card-img-top img-fluid" src="/assets/pics/{{this.dataValues.picurl}}" alt="Product image"
+                height="100" width="100">
+            <div class="row">
+                <div class="col text-center">
+                    <a class="btn addToCartAnchor" href="/addToCart/{{this.dataValues.id}}/{{this.dataValues.quantity}}"
+                        style="background-color: rgb(236, 16, 27);" id="addToCartAnchor"
+                        prodName="{{this.dataValues.name}}">Add to cart</a>
+                </div>
+            </div>
         </div>
         {{/each}}
     </div>
