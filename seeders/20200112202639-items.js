@@ -17,7 +17,7 @@ module.exports = {
       }, {
         category: "cookware",
         name: 'Saute Pan',
-        picurl: 'sauteepan.jpg',
+        picurl: 'sauteepan.jpeg',
         description: 'Stainless steel construction for long-lasting use.',
         quantity: 10,
         itemprice:25.69,
@@ -35,7 +35,7 @@ module.exports = {
       }, {
         category: "cookware",
         name: 'Sauce Pan',
-        picurl: 'saucepan.jpeg',
+        picurl: 'saucepan.jpg',
         description: 'This shallow saucepan is a cook’s essential for making sauces and cooking vegetables and grains without scorching or sticking.',
         quantity: 10,
         itemprice:37.99,
@@ -44,7 +44,7 @@ module.exports = {
       }, {
         category: "cookware",
         name: 'Cookware Set',
-        picurl: 'cookwareset.jpg',
+        picurl: 'cookwareset.jpeg',
         description: 'A complete collection of performance essentials with sleek style.',
         quantity: 10,
         itemprice:129.99,
@@ -53,7 +53,7 @@ module.exports = {
     }, {
         category: "cookware",
         name: 'Tea Kettle',
-        picurl: 'teakettle.jpg',
+        picurl: 'teakettle.jpeg',
         description: 'This beautiful stainless steel tea kettle features an easy grip handle for comfortable pouring and a generous 1.5-qt. capacity. Whistling when water has reached a boil.',
         quantity: 10,
         itemprice:24.99,
@@ -71,7 +71,7 @@ module.exports = {
     }, {
         category: "kitchenutensils",
         name: 'Spoons',
-        picurl: 'spoon.jpg',
+        picurl: 'spoon.jpeg',
         description:'Gleams with a polished finish.',
         quantity: 10,
         itemprice:2,
@@ -80,7 +80,7 @@ module.exports = {
     }, {
         category: "kitchenutensils",
         name: 'Forks',
-        picurl: 'fork.jpg',
+        picurl: 'fork.jpeg',
         description:'Gleams with a polished finish.',
         quantity: 10,
         itemprice:2,
@@ -89,7 +89,7 @@ module.exports = {
     }, {
         category: "kitchenutensils",
         name: 'Knives',
-        picurl: 'knife.jpg',
+        picurl: 'knife.jpeg',
         description:'Gleams with a polished finish.',
         quantity: 10,
         itemprice:2,
@@ -98,7 +98,7 @@ module.exports = {
     }, {
         category: "kitchenutensils",
         name: 'Cleavers',
-        picurl: 'cleaver.jpg',
+        picurl: 'cleaver.jpeg',
         description:'High quality stainless steel. Forged bolster construction and modern design, triple riveted handle.',
         quantity: 10,
         itemprice:6.99,
@@ -107,7 +107,7 @@ module.exports = {
     }, {
         category: "kitchenutensils",
         name: 'Knife Block',
-        picurl: 'knifeblock.jpeg',
+        picurl: 'knifeblock.png',
         description:'Keep your cutlery collection organized and within easy reach by storing it in this handsome knife block.',
         quantity: 10,
         itemprice:24.69,
@@ -116,7 +116,7 @@ module.exports = {
     }, {
         category: "kitchenutensils",
         name: 'Cutting Board',
-        picurl: 'cuttingboard.jpeg',
+        picurl: 'cuttingboard.jpg',
         description:'Butcher-block cutting board featuring extra-strength construction in beautiful end-grain acacia wood. Rich natural contrasts in tone render each thick, footed chopping board unique',
         quantity: 10,
         itemprice:35.49,
@@ -161,7 +161,7 @@ module.exports = {
     }, {
         category: "smallappliances",
         name: 'Toaster',
-        picurl: 'toaster.jpg',
+        picurl: 'toaster.jpeg',
         description:'Easily heats up to 2 bread slices at a time.  Toast boost and auto-shut off function ensure quick and safe use.',
         quantity: 10,
         itemprice:25.99,
@@ -170,7 +170,7 @@ module.exports = {
     }, {
         category: "smallappliances",
         name: 'Microwave',
-        picurl: 'microwave.jpg',
+        picurl: 'microwave.jpeg',
         description:'700-watt countertop microwave with rotating turntable.  Has a sleek design and powerful performance.',
         quantity: 10,
         itemprice:54.99,
@@ -188,7 +188,7 @@ module.exports = {
     }, {
         category: "tableware",
         name: 'Dinner Plate',
-        picurl: 'dinnerplate.jpg',
+        picurl: 'dinnerplate.jpeg',
         description:'Contemporary porcelain whiteware represents a fusion of refinement and rusticity. Round slim profile takes on organic overtones with freeform rims and a finely "hammered" surface.',
         quantity: 10,
         itemprice:5,
@@ -197,7 +197,7 @@ module.exports = {
     }, {
         category: "tableware",
         name: 'Salad Plate',
-        picurl: 'saladplate.jpg',
+        picurl: 'saladplate.jpeg',
         description:'Skilled artisans in Portugal craft our Lowen salad plate by hand, finishing the rustic stoneware dish with a finely speckled glaze.',
         quantity: 10,
         itemprice:5,
@@ -215,7 +215,7 @@ module.exports = {
     }, {
         category: "tableware",
         name: 'Coffee Cup',
-        picurl: 'coffeecup.jpg',
+        picurl: 'coffeecup.jpeg',
         description:'Every adult deserves a proper cup and saucer. Classic and minimal, consider it an investment in your own mindful sipping.',
         quantity: 10,
         itemprice:5,
@@ -224,7 +224,7 @@ module.exports = {
     }, {
         category: "tableware",
         name: 'Glass',
-        picurl: 'glass.jpg',
+        picurl: 'glass.jpeg',
         description:'Perfect for everyday use or special occasions.',
         quantity: 10,
         itemprice:5,
