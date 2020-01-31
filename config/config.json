@@ -15,10 +15,10 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "kitchenitems_db",
-    "host": "127.0.0.1",
+    "username": "zppmrgcwdgixkpdg",
+    "password": "kdx4fqqx7avj0dla",
+    "database": "qjvu3ibo631c63dn",
+    "host": "k2fqe1if4c7uowsh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "operatorsAliases": false
   }
